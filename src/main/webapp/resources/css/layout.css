@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.login-form, .text-field, .submit-btn {
+	border-radius: 10px;
+}
+.login-form {
+	background-color: #EEEFF1;
+	width: 350px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%; 
+	transform: translate(-50%, -50%);
+	padding: 50px;
+	text-align: center;
+	border: none;
+}
+.login-form #eyePass {
+	position: absolute;
+	left: 80%;
+	top: 59%;
+	cursor: pointer;
+}
+
+.text-field {
+	font-size: 14px;
+	padding: 10px;
+	border: none;
+	width: 260px;
+	margin-bottom: 10px;
+}
+
+.submit-btn {
+	font-size: 14px;
+	border: none;
+	padding: 10px;
+	width: 260px;
+	background-color: #007BFF;
+	color: white;
+}
+.submit-btn:hover {
+	background-color: #0069D9;
+	cursor: pointer;
+}
+.submit-btn:focus { 	
+	border: none;
+	outline:none;
+}
+
+a.find { 
+	color: gray;
+	cursor: pointer;
+	display:inline-block; 
+	margin:0;
+	text-transform:uppercase;
+  }
+a.find:after {
+	display:block;
+	content: '';
+	border-bottom: solid 1px gray;  
+	transform: scaleX(0);  
+	transition: transform 250ms ease-in-out;
+}
+a.find:hover:after { transform: scaleX(1); }
+a.find.fromRight:after{ transform-origin:100% 50%; }
+a.find.fromLeft:after{  transform-origin:  0% 50%; }

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: "NEXON Lv2 Gothic Light";
+}
+
+#trh:hover {
+	background-color:#F4F4F4;
+}
+
+#table_center {
+	text-align: center;
+}
+
+.text-field, #keyword {
+	font-family: "NEXON Lv2 Gothic Light", "FontAwesome";
+}
+
+.custom-file-label::after {
+	content: "첨부파일";
+}
